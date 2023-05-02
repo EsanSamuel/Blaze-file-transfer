@@ -3,7 +3,7 @@ import { Card, AddCard } from '../components'
 
 const Cardlist = ({ card, handleAddCard }) => {
     return (
-        <div className='sm:p-20 p-10 grid grid-cols-1 sm:grid-cols-3 gap-5 sm:mt-0 mt-5 bg-none'>
+        <div className='sm:p-20 px-10 pb-20 grid grid-cols-1 sm:grid-cols-3 gap-5 sm:mt-0 mt-5 bg-none'>
             {card.map((cardx) => (
                 <Card
                     id={cardx.id}

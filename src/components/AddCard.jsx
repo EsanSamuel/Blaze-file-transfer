@@ -20,10 +20,10 @@ const AddCard = ({ handleAddCard }) => {
     return (
         <div className='fixed bg-transparent w-full'>
 
-            <div className='px-10 sm:mt-0 mt-[120px] bg-transparent fixed sm:ml-[75%] bottom-0  flex items-center justify-center ml-[50%]'>
+            <div className='px-10 sm:mt-0 mt-[120px] bg-none fixed sm:ml-[75%] bottom-0  flex items-center justify-center ml-[50%]'>
                 <Button
                     title='Add'
-                    styles='mb-28 z-10 p-4 button   bg-[#1dc071] text-[20px]  float-right '
+                    styles='mb-28 z-10 px-6 py-4 rounded-[100px] bg-[#1dc071] text-[20px]  float-right hover:opacity-50'
                     handleClick={() => setRoom(true)}
                 />
             </div>
@@ -38,7 +38,7 @@ const AddCard = ({ handleAddCard }) => {
                         <div className='bg-none'>
                         <Button
                             title='Create Room'
-                            styles='w-full h-[50px] bg-[#0d6efd] rounded mt-10'
+                            styles='w-full h-[50px] bg-[#0d6efd] rounded mt-10 '
                             handleClick={handleSave}
 
                         />

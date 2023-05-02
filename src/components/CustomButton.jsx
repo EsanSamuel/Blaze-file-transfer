@@ -6,7 +6,7 @@ import React from 'react'
 const CustomButton = ({title}) => {
   return (
     <div>
-        <button className='px-3 py-2 bg-[#0d6efd] rounded'>
+        <button className='px-3 py-2 bg-[#0d6efd] rounded hover:opacity-50'>
             {title}
         </button>
     </div>

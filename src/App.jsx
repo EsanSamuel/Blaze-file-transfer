@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navbar } from './components'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Home ,Form,Files, Share} from './Pages'
+import { Home ,Form,Files, Share,Help,Setting, Sponsor} from './Pages'
 
 
 const App = () => {
@@ -15,6 +15,9 @@ const App = () => {
           <Route path='/auth' element={<Form />} />
           <Route path='/files' element={<Files />} />
           <Route path='/share' element={<Share />} />
+          <Route path='/help' element={<Help />} />
+          <Route path='/setting' element={<Setting />} />
+          <Route path='/sponsor' element={<Sponsor />} />
 
         </Routes>
       </BrowserRouter>

@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
-import { Button, Navbar2 } from '../components'
+import { Button, Navbar3, BottomIcon } from '../components'
+import { AiOutlineHeart, AiFillGift } from 'react-icons/ai'
+import { BiCog } from 'react-icons/bi'
+import { RxDashboard } from 'react-icons/rx'
 import { Link, useNavigate } from 'react-router-dom'
 
-const Form = () => {
+const Setting = () => {
     const [form, setForm] = useState()
     const [loader, setLoader] = useState(false)
     const [username, setUsername] = useState('')
@@ -27,17 +30,18 @@ const Form = () => {
         navigate('/files', { state: { username: username } })
     }
     return (
-        <div className='h-[104vh]'>
+        <div className='text-white'>
             <div className='w-full flex justify-between p-5 text-white fixed bg-[#000026]'>
-                <Navbar2 />
+                <Navbar3 />
             </div>
+
             <div className='sm:px-20 sm:py-[20%] py-[40%] px-10 text-white sm:flex justify-between gap-[100px]'>
 
 
 
                 <div>
-                    <h1 className='sm:text-[50px] text-[30px]'>Create your profile</h1>
-                    <p className='mt-7 text-[#5f5f5f]'>Nicknames are used to identify different devices in a <br />common file sharing room. A room must always <br />have devices with unique nicknames.</p>
+                    <h1 className='sm:text-[50px] text-[30px]'>Settings</h1>
+                    <p className='mt-7 text-[#5f5f5f]'>Change your nickname into anyone of your choice </p>
                 </div>
 
                 <form className='sm:mt-0 mt-[30%] sm:w-[40%] gap-5' onSubmit={Submit}>
@@ -48,13 +52,22 @@ const Form = () => {
 
                     <Button
                         title='Continue'
-                        styles='w-full h-[50px] bg-[#0d6efd] rounded mt-10 hover:opacity-50'
+                        styles='w-full h-[50px] bg-[#0d6efd] rounded mt-10'
                     />
                 </form>
 
             </div>
+
+
+
+
+
+
+
+
+            <BottomIcon />
         </div>
     )
 }
 
-export default Form
+export default Setting

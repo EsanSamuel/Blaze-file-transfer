@@ -59,9 +59,9 @@ const Navbar = () => {
                         )}
 
                         styles={account ? (
-                            'px-3 py-2 bg-[#0d6efd] rounded mt-10'
+                            'px-3 py-2 bg-[#0d6efd] rounded mt-10 opacity-50'
                         ) : (
-                            'px-3 py-2 bg-[#0d6efd] rounded mt-10'
+                            'px-3 py-2 bg-[#0d6efd] rounded mt-10 opacity-50'
                         )}
                     />
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Navbar3, Button, AddCard, Cardlist } from '../components'
+import { Navbar3, Button, AddCard, Cardlist, BottomIcon } from '../components'
 import { Link, useLocation } from 'react-router-dom'
 import { AiOutlinePlus } from 'react-icons/ai'
 import { RxDashboard } from 'react-icons/rx'
@@ -69,12 +69,7 @@ const Files = ({ handleAddCard }) => {
 
 
 
-            <div className='sm:hidden flex justify-between px-10 py-2 pb-10 xx bottom-0 fixed w-full'>
-                <RxDashboard className='text-[25px]' />
-                <BiCog className='text-[25px]' />
-                <AiFillGift className='text-[25px]' />
-                <AiOutlineHeart className='text-[25px]' />
-            </div>
+           <BottomIcon />
 
 
 
