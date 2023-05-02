@@ -10,7 +10,7 @@ const Sponsor = () => {
             </div>
 
             <div className='sm:p-20 p-10 sm:mt-20 mt-[130px] absolute w-full'>
-                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                <h1 className='text-[#5f5f5f]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h1>
                 <Button
@@ -19,7 +19,7 @@ const Sponsor = () => {
                 />
 
 
-                <h1 className='mt-20'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                <h1 className='mt-20 text-[#5f5f5f]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h1>
                 <Button
