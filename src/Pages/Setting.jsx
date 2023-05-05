@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
 import { Button, Navbar3, BottomIcon } from '../components'
-import { AiOutlineHeart, AiFillGift } from 'react-icons/ai'
-import { BiCog } from 'react-icons/bi'
-import { RxDashboard } from 'react-icons/rx'
 import { Link, useNavigate } from 'react-router-dom'
 
 const Setting = () => {
@@ -29,13 +26,20 @@ const Setting = () => {
 
         navigate('/files', { state: { username: username } })
     }
+
+    const clearAll = () => {
+        localStorage.clear()
+        navigate('/auth')
+        alert('Data cleared successfully!')
+    }
+
     return (
         <div className='text-white'>
             <div className='w-full flex justify-between p-5 text-white fixed bg-[#000026]'>
                 <Navbar3 />
             </div>
 
-            <div className='sm:px-20 sm:py-[20%] py-[40%] px-10 text-white sm:flex justify-between gap-[100px]'>
+            <div className='sm:px-20 sm:py-[20%] py-[40%] px-5 text-white sm:flex justify-between gap-[100px]'>
 
 
 
@@ -60,11 +64,26 @@ const Setting = () => {
 
 
 
+            <div className='sm:px-20 sm:py-[0%] py-[0%] px-5 text-white sm:flex justify-between gap-[100px]'>
+
+                <div className='sm:pb-10 pb-20'>
+
+                    <h1 className='mt-7  text-[25px]'>Clear local data </h1>
+                    <p className='mt-7 text-[#5f5f5f] sm:w-[60%]'>Clearing local data removes all the data stored by blaze on this devices.
+                        You'll be taken to new user setup screen </p>
+                </div>
+
+                <div className='sm:mt-0 mb-[30%] sm:w-[55%] '>
+                    <Button
+                        title='Clear all'
+                        styles='w-full h-[50px] border border-[#0d6efd] rounded mt-0 hover:bg-[#0d6efd] mt-10'
+                        handleClick={clearAll}
+                    />
 
 
+                </div>
 
-
-
+            </div>
             <BottomIcon />
         </div>
     )

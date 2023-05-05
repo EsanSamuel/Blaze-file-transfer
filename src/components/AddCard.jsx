@@ -1,49 +1,60 @@
 import React, { useState } from 'react'
 import { Button } from './'
-import { AiOutlineClose,AiOutlinePlus } from 'react-icons/ai'
+import { AiOutlineClose, AiOutlinePlus } from 'react-icons/ai'
+import { useNavigate } from 'react-router-dom'
 
 const AddCard = ({ handleAddCard }) => {
     const [room, setRoom] = useState(false)
     const [cardText, setCardText] = useState('')
+    const [form, setForm] = useState()
 
-    const handleSave = () => {
+    const navigate = useNavigate()
+
+    const handleSave = (e) => {
+        e.preventDefault()
         if (cardText.trim().length > 0) {
             handleAddCard(cardText)
             setCardText('')
+            setRoom(false)
         }
+
+        //navigate('/share', { state: { roomname: cardText } })
     }
 
     const handleChange = (e) => {
         setCardText(e.target.value)
     }
 
+
     return (
         <div className='fixed bg-transparent w-full'>
 
-            <div className='px-10 sm:mt-0 mt-[120px] bg-none fixed sm:ml-[75%] bottom-0  flex items-center justify-center ml-[50%]'>
+            <div className='px-10 sm:mt-0 mt-[120px] bg-transparent fixed sm:ml-[75%] bottom-0  flex items-center justify-center ml-[50%]'>
                 <Button
-                    title='Add'
-                    styles='mb-28 z-10 px-6 py-4 rounded-[100px] bg-[#1dc071] text-[20px]  float-right hover:opacity-50'
+                    title='New'
+                    styles='mb-28 
+                    px-6 py-3 rounded-[100px] bg-[#1dc071] text-[20px]  float-right hover:opacity-50 text-black'
                     handleClick={() => setRoom(true)}
                 />
             </div>
 
-            <div className='sm:px-[200px] p-10 bg-transparent w-full flex justify-center items-center'>
+            <div className='sm:px-[270px] sm:ml-10 bg-transparent w-[89%] flex justify-center items-center'>
                 {room && (
-                    <div className='p-10 bg-[#000026]  glass  text-center mt-[-70%] w-full sm:ml-[-20%] ml-[-25%]'>
+                    <form className='p-10 
+                      bg-[#000026]  glass  text-center mt-[-78%] w-full sm:ml-[-20%] ' onSubmit={handleSave}>
                         <AiOutlineClose onClick={() => setRoom(false)} />
                         <h1>Create Room</h1>
-                        <input className='w-full h-[50px] mt-5 border border-[#5f5f5f] bg-transparent rounded outline-[#0d6efd] px-5' onChange={handleChange} value={cardText} />
+                        <input className='w-full h-[50px] mt-5 border border-[#5f5f5f] bg-transparent rounded outline-[#0d6efd] px-5' onChange={handleChange} name='roomname' value={cardText} />
 
                         <div className='bg-none'>
-                        <Button
-                            title='Create Room'
-                            styles='w-full h-[50px] bg-[#0d6efd] rounded mt-10 '
-                            handleClick={handleSave}
+                            <Button
+                                title='Create Room'
+                                styles='w-full h-[50px] bg-[#0d6efd] rounded mt-10 hover:opacity-50 '
+                                handleClick={handleSave}
 
-                        />
+                            />
                         </div>
-                    </div>
+                    </form>
                 )}
             </div>
 

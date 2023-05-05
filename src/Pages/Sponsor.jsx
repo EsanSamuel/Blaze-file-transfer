@@ -9,12 +9,14 @@ const Sponsor = () => {
                 <Navbar3 />
             </div>
 
-            <div className='sm:p-20 p-10 sm:mt-20 mt-[130px] absolute w-full'>
+            <div className='sm:p-20 p-5 sm:mt-[10%] mt-[130px] absolute w-full'>
+                <h1 className='text-white sm:text-[40px] text-[30px] py-5 mt-[-10%] bg-none'
+                >Sponsor Us</h1>
                 <h1 className='text-[#5f5f5f]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h1>
                 <Button
-                    styles='w-full mt-10 bg-[#0d6efd] p-2 rounded hover:bg-transparent hover: border border-[#0d6efd]'
+                    styles='w-full mt-10 hover:bg-[#0d6efd] p-2 rounded hover:bg-transparent border border-[#0d6efd]'
                     title='View Github profile'
                 />
 
@@ -23,11 +25,11 @@ const Sponsor = () => {
                     tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h1>
                 <Button
-                    styles='w-full mt-10 bg-[#0d6efd] p-2 rounded hover:bg-transparent hover: border border-[#0d6efd]'
+                    styles='w-full mt-10 hover:bg-[#0d6efd] p-2 rounded hover:bg-transparent border border-[#0d6efd]'
                     title='View Github profile'
                 />
 
-                <div className='text-center flex justify-center cursor-pointer'><h1 className='text-center mt-20'> View Github repisitory</h1></div>
+                <div className='text-center flex justify-center cursor-pointer'><h1 className='text-center py-20'> View Github repisitory</h1></div>
             </div>
 
 

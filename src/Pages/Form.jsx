@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Button, Navbar2 } from '../components'
 import { Link, useNavigate } from 'react-router-dom'
 
@@ -25,7 +25,26 @@ const Form = () => {
         )
 
         navigate('/files', { state: { username: username } })
+
+
     }
+
+    useEffect(() => {
+        const savedName = JSON.parse(
+            localStorage.getItem(
+                'file-name')
+        )
+        if (savedName) {
+            setUsername(savedName)
+        }
+
+    }, [])
+
+    useEffect(() => {
+        localStorage.setItem('file-name', JSON.stringify(username))
+    }, [username])
+
+
     return (
         <div className='h-[104vh]'>
             <div className='w-full flex justify-between p-5 text-white fixed bg-[#000026]'>

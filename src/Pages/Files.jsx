@@ -27,6 +27,10 @@ const Files = ({ handleAddCard }) => {
         setCard(newcard)
     }
 
+    const deleteCard = (id) => {
+        const newcard = card.filter((cardx) => cardx.id !== id)
+    }
+
     useEffect(() => {
         const savedCard = JSON.parse(
             localStorage.getItem(
@@ -51,25 +55,25 @@ const Files = ({ handleAddCard }) => {
 
 
             <div className='sm:flex justify-between w-full'>
-                <div className='sm:p-20 px-10 py-20'>
-                    <h1 className='text-[26px] mt-2'>Hi, {username} 🖐.</h1>
+                <div className='sm:p-20 px-5 py-20'>
+                    <h1 className='text-[26px] mt-2 font-bold'>Hi, {username} 👋.</h1>
                     <p className='text-[#5f5f5f] mt-3'>Join or create a room to share files</p>
                 </div>
             </div>
 
 
-            <div className='sm:p-20 p-10 mt-[-10%]'>
+            <div className='sm:p-20 p-5 mt-[-10%]'>
                 <Search handleSearch={setSearch} />
             </div>
 
             <Cardlist
-                card={card.filter((cardx) => cardx.text.toLowerCase().includes(search))}
+                card={card.filter((cardx) => cardx.text.includes(search))}
                 handleAddCard={addCards}
             />
 
 
 
-           <BottomIcon />
+            <BottomIcon />
 
 
 
