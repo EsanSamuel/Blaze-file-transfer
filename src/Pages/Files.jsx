@@ -28,7 +28,8 @@ const Files = ({ handleAddCard }) => {
     }
 
     const deleteCard = (id) => {
-        const newcard = card.filter((cardx) => cardx.id !== id)
+        const deletecard = card.filter((cardx) => cardx.id !== id)
+        setCard(deletecard)
     }
 
     useEffect(() => {
@@ -69,6 +70,7 @@ const Files = ({ handleAddCard }) => {
             <Cardlist
                 card={card.filter((cardx) => cardx.text.includes(search))}
                 handleAddCard={addCards}
+                handleDeleteCard={deleteCard}
             />
 
 
