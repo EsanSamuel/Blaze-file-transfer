@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Button } from './'
 import { AiOutlineClose, AiOutlinePlus } from 'react-icons/ai'
 import { useNavigate } from 'react-router-dom'
@@ -24,6 +24,21 @@ const AddCard = ({ handleAddCard }) => {
     const handleChange = (e) => {
         setCardText(e.target.value)
     }
+
+ 
+        const Generate = () => {
+            let code = '1234567890'
+            let roomCode = ''
+            for (let i = 0; i < 6; i++) {
+                roomCode += code[Math.floor(Math.random() * 10)]
+            }
+            setCardText(roomCode)
+        }
+    
+
+        useEffect(() => {
+            Generate()
+        }, [])
 
 
     return (
@@ -51,6 +66,13 @@ const AddCard = ({ handleAddCard }) => {
                                 title='Create Room'
                                 styles='w-full h-[50px] bg-[#0d6efd] rounded mt-10 hover:opacity-50 '
                                 handleClick={handleSave}
+
+                            />
+
+                            <Button
+                                title='Generate random room name'
+                                styles='w-full h-[50px] border border-[#0d6efd] rounded mt-10 hover:opacity-50 '
+                                handleClick={Generate}
 
                             />
                         </div>

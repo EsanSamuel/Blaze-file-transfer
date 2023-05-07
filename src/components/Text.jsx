@@ -23,7 +23,7 @@ const Text = () => {
                 <img src={file} />
             </div>
 
-        </div >
+        </div>
     )
 }
 
