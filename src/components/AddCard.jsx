@@ -53,7 +53,7 @@ const AddCard = ({ handleAddCard }) => {
                 />
             </div>
 
-            <div className='sm:px-[270px] sm:ml-10 bg-transparent w-[89%] flex justify-center items-center '>
+            <div className='sm:px-[270px] sm:ml-10 bg-transparent w-[89%] flex justify-center items-center fixed '>
                 {room && (
                     <form className='p-10 
                       bg-[#000026]  glass  text-center mt-[-172%] w-full sm:ml-[-20%] ' onSubmit={handleSave}>
