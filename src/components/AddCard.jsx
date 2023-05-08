@@ -42,7 +42,7 @@ const AddCard = ({ handleAddCard }) => {
 
 
     return (
-        <div className='fixed bg-transparent w-full'>
+        <div className='bg-transparent w-full'>
 
             <div className='px-10 sm:mt-0 mt-[120px] bg-transparent fixed sm:ml-[75%] bottom-0  flex items-center justify-center ml-[50%]'>
                 <Button
