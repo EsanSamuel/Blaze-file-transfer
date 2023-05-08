@@ -17,7 +17,7 @@ const Help = () => {
       </div>
 
       <div className='flex justify-center items-center bg-none'>
-        <MdSupportAgent className='text-[170px] text-[#0d6efd] sm:mt-[50%] mt-[90%] bg-none absolute'/>
+        <MdSupportAgent className='text-[170px] text-[#0d6efd] sm:mt-[50%] mt-[80%] bg-none absolute'/>
       </div>
 
 
