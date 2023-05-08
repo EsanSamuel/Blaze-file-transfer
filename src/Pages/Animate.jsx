@@ -30,7 +30,7 @@ const Animate = () => {
               <div className=''>
 
                 <img src={datax.image} className='w-full' />
-                <h1 className='text-center text-[30px] mt-10'>{datax.title}</h1>
+                <h1 className='text-center text-25px] mt-10'>{datax.title}</h1>
 
               </div>
 
