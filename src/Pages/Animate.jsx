@@ -44,7 +44,7 @@ const Animate = () => {
           <Link to='/auth'>
             <Button
               title='Continue'
-              styles=' w-full h-[50px] bg-[#0d6efd] rounded-[100px] mt-20 hover:opacity-50 '
+              styles=' w-full h-[45px] bg-[#0d6efd] rounded-[100px] mt-20 hover:opacity-50 '
             />
           </Link>
         </div>
