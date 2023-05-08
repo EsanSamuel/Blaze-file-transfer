@@ -30,9 +30,8 @@ const Cardlist = ({ card, handleAddCard, handleDeleteCard }) => {
             )}
 
 
-<div className='fixed'>
             <AddCard handleAddCard={handleAddCard} />
-                </div>
+                
 
         </div>
 
