@@ -11,7 +11,7 @@ const Text = () => {
                 <p className=' mt-7 text-[#5f5f5f]'>Share files all over the world with ease and top <br />notch secutity with lots of features. </p>
 
                 <div className='mt-10'>
-                    <Link to='/auth'> <CustomButton
+                    <Link to='/animate'> <CustomButton
                         title='Get Started'
                     /></Link>
                 </div>
