@@ -7,7 +7,7 @@ const Cardlist = ({ card, handleAddCard, handleDeleteCard }) => {
         <div className='sm:p-20 px-5 pb-20 gap-5 sm:mt-0 mt-5 bg-none'>
             <h1 className='font-bold sm:hidden'>Recent rooms</h1>
             {card?.length > 0 ? (
-                <div className='gap-1 sm:gap-2 grid grid-cols-1 sm:grid-cols-3 absolute'>
+                <div className='gap-1 sm:gap-2 grid grid-cols-1 sm:grid-cols-3 '>
                     {card.reverse().map((cardx) => (
                         <Card
                             id={cardx.id}
