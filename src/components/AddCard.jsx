@@ -70,7 +70,7 @@ const AddCard = ({ handleAddCard }) => {
                             />
 
                             <Button
-                                title='Generate random room name'
+                                title='Generate random room'
                                 styles='w-full h-[50px] border border-[#0d6efd] rounded mt-10 hover:opacity-50 '
                                 handleClick={Generate}
 
