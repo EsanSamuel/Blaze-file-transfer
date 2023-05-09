@@ -50,7 +50,7 @@ const Form = () => {
             <div className='w-full flex justify-between p-5 text-white fixed bg-[#000026]'>
                 <Navbar2 />
             </div>
-            <div className='sm:px-20 sm:py-[20%] py-[40%] px-10 text-white sm:flex justify-between gap-[100px]'>
+            <div className='sm:px-20 sm:py-[20%] py-[40%] px-5 text-white sm:flex justify-between gap-[100px]'>
 
 
 
