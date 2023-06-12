@@ -53,10 +53,10 @@ const AddCard = ({ handleAddCard }) => {
                 />
             </div>
 
-            <div className='sm:px-[270px] sm:ml-10 bg-transparent w-[89%] flex justify-center items-center '>
+            <div className='sm:px-[270px] sm:ml-10 bg-transparent w-[89%] flex justify-center items-center fixed top-[10%] '>
                 {room && (
                     <form className='p-10 
-                      bg-[#000026]  glass  text-center mt-[-172%] w-full sm:ml-[-20%] ' onSubmit={handleSave}>
+                      bg-[#000026]  glass  text-center w-full sm:ml-[-20%] ' onSubmit={handleSave}>
                         <AiOutlineClose onClick={() => setRoom(false)} />
                         <h1>Create Room</h1>
                         <input className='w-full h-[50px] mt-5 border border-[#5f5f5f] bg-transparent rounded outline-[#0d6efd] px-5' onChange={handleChange} name='roomname' value={cardText} />
