@@ -12,7 +12,7 @@ const Sponsor = () => {
             <div className='sm:p-20 p-5 sm:mt-[10%] mt-[130px] absolute w-full'>
                 <h1 className='text-white sm:text-[40px] text-[30px] py-5 mt-[-10%] bg-none'
                 >Sponsor Us</h1>
-                <h1 className='text-[#5f5f5f]'>Hi, I'm Esan Samuel,a problem solving full-stack developer skilled in React,TypeScript,Firebase,Tailwind,CSS,Node js and Solidity. I built this project to solve the problem I have in transferring a file from one device to another.
+                <h1 className='text-[#5f5f5f]'>Hi, I'm Esan Samuel,a problem solving full-stack developer skilled in React,TypeScript,Firebase,Tailwind,Node js and Solidity. I built this project to solve the problem I have in transferring a file from one device to another.
 </h1>
                 <Button
                     styles='w-full mt-10 hover:bg-[#0d6efd] p-2 rounded hover:bg-transparent border border-[#0d6efd]'
