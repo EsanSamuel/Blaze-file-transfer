@@ -14,17 +14,17 @@ const Sponsor = () => {
                 >Sponsor Us</h1>
                 <h1 className='text-[#5f5f5f]'>Hi, I'm Esan Samuel,a problem solving full-stack developer skilled in React,TypeScript,Firebase,Tailwind,Node js and Solidity. I built this project to solve the problem I have in transferring a file from one device to another.
 </h1>
-                <Button
+                <a href='https://github.com/EsanSamuel'><Button
                     styles='w-full mt-10 hover:bg-[#0d6efd] p-2 rounded hover:bg-transparent border border-[#0d6efd]'
                     title='Support on Github'
-                />
+                /></a>
 
 
                 <h1 className='mt-20 text-[#5f5f5f]'>You can view the source codes of this project,star the project,find bugs and contribute a fix.You can also suggest pickup development of a new feature</h1>
-                <Button
+                <a href='https://github.com/EsanSamuel/Blaze-file-transfer'><Button
                     styles='w-full mt-10 hover:bg-[#0d6efd] p-2 rounded hover:bg-transparent border border-[#0d6efd]'
                     title='View Github profile'
-                />
+                /></a>
 
                 <div className='text-center flex justify-center cursor-pointer'><h1 className='text-center py-20'> View Github repisitory</h1></div>
             </div>
