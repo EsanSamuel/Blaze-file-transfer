@@ -23,10 +23,10 @@ const Sponsor = () => {
                 <h1 className='mt-20 text-[#5f5f5f]'>You can view the source codes of this project,star the project,find bugs and contribute a fix.You can also suggest pickup development of a new feature</h1>
                 <a href='https://github.com/EsanSamuel/Blaze-file-transfer'><Button
                     styles='w-full mt-10 hover:bg-[#0d6efd] p-2 rounded hover:bg-transparent border border-[#0d6efd]'
-                    title='View Github profile'
+                    title='View Github repisitory'
                 /></a>
 
-                <div className='text-center flex justify-center cursor-pointer'><h1 className='text-center py-20'> View Github repisitory</h1></div>
+                
             </div>
 
 
