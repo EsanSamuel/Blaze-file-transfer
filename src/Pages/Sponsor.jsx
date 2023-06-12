@@ -25,7 +25,7 @@ const Sponsor = () => {
                     styles='w-full mt-10 hover:bg-[#0d6efd] p-2 rounded hover:bg-transparent border border-[#0d6efd]'
                     title='View Github repisitory'
                 /></a>
-
+<div className='text-center flex justify-center cursor-pointer'><h1 className='text-center py-20'> Support the development</h1></div>
                 
             </div>
 
