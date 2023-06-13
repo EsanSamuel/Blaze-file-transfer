@@ -21,7 +21,7 @@ const Help = () => {
       </div>
     
      <div>
-        <h1 className='text-center  text-[#5f5f5f] mt-[100%] z-10'>Details on how to use blaze coming soon.</h1>
+        <h1 className='text-center  text-[#5f5f5f] mt-[100%] z-10'>Details on how to use blaze coming soon!</h1>
 
       </div>
 
