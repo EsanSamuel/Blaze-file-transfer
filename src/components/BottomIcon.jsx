@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const BottomIcon = () => {
     return (
-        <div className='text-white'>
+        <div className='text-white bg-[#000026]'>
             <div className='sm:hidden flex justify-between px-10 py-2 pb-10 xx bottom-0 fixed w-full'>
             <RxDashboard className='text-[25px]' />
                 <Link to='/setting'><BiCog className='text-[25px]' /></Link>
