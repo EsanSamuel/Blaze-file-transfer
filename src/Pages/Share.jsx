@@ -20,7 +20,7 @@ const Share = () => {
             <div className=' bottom-0 sm:p-10 p-5 bg-none'>
         
          <div className='text-center'>
-                    <h1 className='text-[18px] text-[white]'>Room : <span className='text-[#5f5f5f]'>{text}</span></h1>
+                    <h1 className='text-[18px] text-[#5f5f5f]'>Room: <span className='text-[#5f5f5f]'>{text}</span></h1>
                     
                 </div>
 
