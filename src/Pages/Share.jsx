@@ -52,7 +52,7 @@ const Share = () => {
                 )}
             </div>
 
-            <div className='bottom-0 fixed items-center text-center flex justify-center sm:pb-10 pb-[30px] p-5'>
+            <div className='bottom-0 fixed items-center text-center flex justify-center sm:pb-10 pb-[30px] p-5 bg-none'>
                 <Button
                     title={loading ? (
                         'Sending...'
