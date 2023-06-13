@@ -10,6 +10,9 @@
     
 }
 
+div{
+    background:none;
+
 .active {
     filter: blur(100px);
 }
