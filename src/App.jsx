@@ -14,7 +14,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/auth' element={<Form />} />
           <Route path='/files' element={<Files />} />
-          <Route path='/share' element={<Share />} />
+          <Route path='/share/:text' element={<Share />} />
           <Route path='/help' element={<Help />} />
           <Route path='/setting' element={<Setting />} />
           <Route path='/sponsor' element={<Sponsor />} />
