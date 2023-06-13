@@ -29,7 +29,7 @@ const Share = () => {
                 <input type='file' placeholder='Choose files' className='mt-14' />
 </div>
 
-                <AiOutlineShareAlt className='text-[30px] text-[#5f5f5f] cursor-pointer float-right sm:mt-[-6%] mt-[-20%]' />
+                <AiOutlineShareAlt className='text-[30px] text-[#5f5f5f] cursor-pointer float-right top-[2%] right-[5%] fixed' />
             </div>
 
 
