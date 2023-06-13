@@ -3,10 +3,11 @@ import { Button, Navbar2, Navbar3 } from '../components'
 import { RxDashboard } from 'react-icons/rx'
 import { BiCog } from 'react-icons/bi'
 import { AiFillGift, AiOutlineHeart,AiOutlineShareAlt } from 'react-icons/ai'
-import { useLocation } from 'react-router-dom'
+import { useLocation,useParams } from 'react-router-dom'
 
 const Share = () => {
     const [loading, setLoading] = useState(false)
+     const { text } = useParams()
 
     //const { state } = useLocation()
 
@@ -17,6 +18,12 @@ const Share = () => {
 
 
             <div className=' bottom-0 sm:p-10 p-5 bg-none'>
+        
+         <div className='text-center'>
+                    <h1 className='text-[18px] text-[white]'>Room : <span className='text-[#5f5f5f]'>{text}</span></h1>
+                    
+                </div>
+
                
                <div>
                 <input type='file' placeholder='Choose files' className='mt-14' />
