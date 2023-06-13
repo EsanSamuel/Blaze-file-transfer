@@ -13,7 +13,7 @@ const Help = () => {
 
 
       <div className='mt-20 absolute sm:p-20 p-5 sm:text-[40px] text-[30px]'>
-        <h1>How to use Blaze</h1>
+        <h1>How to use Blaze?</h1>
       </div>
 
       <div className='flex justify-center items-center bg-none'>
