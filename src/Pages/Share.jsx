@@ -8,10 +8,13 @@ import { useLocation,useParams } from 'react-router-dom'
 const Share = () => {
     const [loading, setLoading] = useState(false)
      const { text } = useParams()
+     const [selectedImages, setSelectedImages] = useState()
 
-    //const { state } = useLocation()
-
-    //const { cardText } = state
+    const imageChange = (e) => {
+        if (e.target.files && e.target.files.length > 0) {
+            setSelectedImages(e.target.files[0])
+        }
+    }
 
     return (
         <div className='text-white'>
@@ -41,6 +44,13 @@ const Share = () => {
       />
       </div>
 
+            <div className=' sm:p-10 p-5'>
+                {selectedImages && (
+                    <div className='w-[200px] sm:p-10 p-5 border rounded border-[#5f5f5f]'>
+                        <img src={URL.createObjectURL(selectedImages)} />
+                    </div>
+                )}
+            </div>
 
             <div className='bottom-0 fixed items-center text-center flex justify-center sm:pb-10 pb-[30px] p-5'>
                 <Button
