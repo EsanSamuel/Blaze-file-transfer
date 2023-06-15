@@ -52,8 +52,8 @@ const Files = ({ handleAddCard }) => {
             <div className='w-full flex justify-between p-5 text-white fixed bg-[#000026]'>
                 <Navbar3 />
 
-                <div className='text-[#5f5f5f]'>
-                    <IoMdNotificationsOutline className='text-[#5f5f5f] text-[27px]'/>
+                <div className='text-[#5f5f5f] sm:hidden'>
+                    <IoMdNotificationsOutline className='text-[#5f5f5f] text-[27px] sm:hidden'/>
                 </div>
             </div>
 
