@@ -7,6 +7,7 @@ import { BiCog } from 'react-icons/bi'
 import { AiFillGift, AiOutlineHeart } from 'react-icons/ai'
 import { nanoid } from 'nanoid'
 import { Search } from '../components'
+import { IoMdNotificationsOutline } from 'react-icons/io'
 
 const Files = ({ handleAddCard }) => {
     const [card, setCard] = useState([])
@@ -50,6 +51,10 @@ const Files = ({ handleAddCard }) => {
         <div className='text-white h-auto'>
             <div className='w-full flex justify-between p-5 text-white fixed bg-[#000026]'>
                 <Navbar3 />
+
+                <div className='text-[#5f5f5f]'>
+                    <IoMdNotificationsOutline className='text-[#5f5f5f] text-[27px]'/>
+                </div>
             </div>
 
 
