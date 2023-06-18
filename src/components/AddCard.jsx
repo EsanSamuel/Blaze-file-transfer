@@ -44,11 +44,11 @@ const AddCard = ({ handleAddCard }) => {
     return (
         <div className='fixed bg-transparent w-full'>
 
-            <div className='px-10 sm:mt-0 mt-[120px] bg-transparent fixed sm:ml-[75%] bottom-0  flex items-center justify-center ml-[50%]'>
+            <div className='bottom-0 bg-transparent fixed sm:right flex items-center justify-center right-[5%]'>
                 <Button
                     title='New'
                     styles='mb-28 
-                    px-6 py-3 rounded-[100px] bg-[#1dc071] text-[20px]  float-right hover:opacity-50 text-black'
+                    px-6 py-3 rounded-[50px] bg-[#1dc071] text-[20px]  float-right hover:opacity-50 text-black'
                     handleClick={() => setRoom(true)}
                 />
             </div>
