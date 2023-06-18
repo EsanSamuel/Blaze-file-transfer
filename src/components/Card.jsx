@@ -11,7 +11,7 @@ const Card = ({ id, text, date ,handleDeleteCard}) => {
         
       </div></Link>
       <div className='top-0'>
-          <AiOutlineClose className='float-right mt-[-35px]' onClick={()=> handleDeleteCard(id)}/>
+          <AiOutlineClose className='text-[#5f5f5f] float-right mt-[-35px]' onClick={()=> handleDeleteCard(id)}/>
         </div>
     </div>
   )
