@@ -47,7 +47,7 @@ const AddCard = ({ handleAddCard }) => {
             <div className='bottom-0 bg-transparent fixed sm:right flex items-center justify-center right-[5%]'>
                 <Button
                     title='New Room'
-                    styles='mb-28 
+                    styles='mb-28 sm:mb-10 
                     px-6 py-3 rounded-[50px] bg-[#1dc071] text-[20px]  float-right hover:opacity-50 text-black'
                     handleClick={() => setRoom(true)}
                 />
