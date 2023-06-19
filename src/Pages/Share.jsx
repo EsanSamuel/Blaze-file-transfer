@@ -52,20 +52,25 @@ const Share = () => {
                 )}
             </div>
 
-            <div className='bottom-0 fixed items-center text-center flex justify-center sm:pb-10 pb-[30px] p-5 bg-none'>
-                <Button
-                    title={loading ? (
-                        'Sending...'
-                    ) : (
-                        'Send File'
-                    )}
-                    styles={loading ? (
-                        'bg-[#1dc071]  px-5 py-2 rounded opacity-70'
-                    ) : (
-                        'bg-[#1dc071]  px-5 py-2 rounded '
-                    )}
-                    handleClick={() => setLoading(true)}
-                />
+           <div className='bottom-0 fixed right items-center text-center flex justify-center sm:pb-10 pb-[30px] p-5 bg-none'>
+                {!selectedImages ? (
+                    <button className='bg-[#5f5f5f]  px-5 py-2 rounded opacity-70 cursor-no-drop'>Send File</button>
+                ) : (
+                    <Button
+                        title={loading ? (
+                            'Sending...'
+                        ) : (
+                            'Send File'
+                        )}
+                        styles={loading ? (
+                            'bg-[#1dc071]  px-5 py-2 rounded opacity-70 cursor-wait'
+                        ) : (
+                            'bg-[#1dc071]  px-5 py-2 rounded '
+                        )}
+                        handleClick={() => setLoading(true)}
+                    />
+                )}
+
             </div>
 
 
