@@ -10,6 +10,17 @@
     
 }
 
+*::-webkit-scrollbar{
+    background: #000026;
+    width: 6px;
+}
+
+*::-webkit-scrollbar-thumb{
+    background: #aaaaaa;
+    width: 5px;
+    border-radius: 10px;
+}
+
 div{
     background:none;
 }
