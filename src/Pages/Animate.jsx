@@ -29,7 +29,7 @@ const Animate = () => {
             <div key={datax.id} className='sm:mt-0 mt-20'>
               <div className=''>
 
-                <img src={datax.image} className='w-full' />
+                <img src={datax.image} className='w-full sm:h-[400px]' />
                 <h1 className='text-center text-[25px] mt-10'>{datax.title}</h1>
 
               </div>
