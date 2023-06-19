@@ -59,7 +59,7 @@ const AddCard = ({ handleAddCard }) => {
                       bg-[#000026]  glass  text-center w-full sm:ml-[-20%] ' onSubmit={handleSave}>
                         <AiOutlineClose onClick={() => setRoom(false)} />
                         <h1>Create Room</h1>
-                        <input className='w-full h-[50px] mt-5 border border-[#5f5f5f] bg-transparent rounded outline-[#0d6efd] px-5' onChange={handleChange} name='roomname' value={cardText} />
+                        <input className='w-full h-[50px] mt-5 border border-[#5f5f5f] bg-transparent rounded outline-[#0d6efd] px-5' onChange={handleChange} name='roomname' value={cardText} placeholder='Enter Room Name'/>
 
                         <div className='bg-none'>
                             <Button
