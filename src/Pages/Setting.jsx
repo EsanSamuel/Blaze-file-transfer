@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import { Button, Navbar3, BottomIcon } from '../components'
 import { Link, useNavigate } from 'react-router-dom'
+import { BsToggleOn, BsToggleOff } from 'react-icons/bs'
 
 const Setting = () => {
     const [form, setForm] = useState()
     const [loader, setLoader] = useState(false)
     const [username, setUsername] = useState('')
+     const [toggle, setToggle] = useState(false)
 
     const navigate = useNavigate()
 
@@ -59,6 +61,18 @@ const Setting = () => {
                         styles='w-full h-[50px] bg-[#0d6efd] rounded mt-10'
                     />
                 </form>
+
+            </div>
+
+             <div className='flex justify-between w-full sm:p-20 p-5 sm:pb-0 pb-10 text-[#5f5f5f] mt-[-10%]'>
+                <div>
+                    <h1>Request Password Input</h1>
+                </div>
+
+                <div>
+                    {toggle && (<BsToggleOn className='text-[#0d6efd] text-[30px]' onClick={() => setToggle(false)} />)}
+                    {!toggle && (<BsToggleOff className='text-[#5f5f5f] text-[30px]' onClick={() => setToggle(true)} />)}
+                </div>
 
             </div>
 
