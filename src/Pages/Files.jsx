@@ -12,7 +12,7 @@ import { IoMdNotificationsOutline , IoMdNotificationsOff} from 'react-icons/io'
 const Files = ({ handleAddCard }) => {
     const [card, setCard] = useState([])
     const [search, setSearch] = useState('')
-     const [notifications, setNotifications] = useState(true)
+     const [notifications, setNotifications] = useState(false)
 
     const { state } = useLocation()
 
