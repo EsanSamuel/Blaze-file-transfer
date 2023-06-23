@@ -92,7 +92,7 @@ const Setting = () => {
                 <div className='sm:mt-0 mb-[30%] sm:w-[55%] '>
                     <Button
                         title='Clear all'
-                        styles='w-full h-[50px] border border-[#0d6efd] rounded mt-0 hover:bg-[#0d6efd] mt-10'
+                        styles='w-full h-[50px] border border-[#0d6efd] rounded mt-0 hover:bg-[#0d6efd] mt-0'
                         handleClick={clearAll}
                     />
 
