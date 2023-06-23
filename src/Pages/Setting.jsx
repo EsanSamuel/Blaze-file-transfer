@@ -65,7 +65,7 @@ const Setting = () => {
             </div>
 
             <div className='sm:p-20 p-5 mt-[-10%]'>
-             <div className='flex justify-between w-full sm:p-20 p-5 sm:pb-0 pb-10 text-[#5f5f5f] mt-[-10%] border border-[#5f5f5f] rounded'>
+             <div className='flex justify-between w-full sm:p-20 p-5 text-[#5f5f5f] mt-[-10%] border border-[#5f5f5f] rounded'>
                 <div>
                     <h1>Request Password Input</h1>
                 </div>
