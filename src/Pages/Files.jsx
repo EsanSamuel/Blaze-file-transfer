@@ -4,14 +4,15 @@ import { Link, useLocation } from 'react-router-dom'
 import { AiOutlinePlus } from 'react-icons/ai'
 import { RxDashboard } from 'react-icons/rx'
 import { BiCog } from 'react-icons/bi'
-import { AiFillGift, AiOutlineHeart } from 'react-icons/ai'
+import { AiFillGift, AiOutlineHeart, AiOutlineClose } from 'react-icons/ai'
 import { nanoid } from 'nanoid'
 import { Search } from '../components'
-import { IoMdNotificationsOutline } from 'react-icons/io'
+import { IoMdNotificationsOutline , IoMdNotificationsOff} from 'react-icons/io'
 
 const Files = ({ handleAddCard }) => {
     const [card, setCard] = useState([])
     const [search, setSearch] = useState('')
+     const [notifications, setNotifications] = useState(true)
 
     const { state } = useLocation()
 
@@ -52,8 +53,28 @@ const Files = ({ handleAddCard }) => {
             <div className='w-full flex justify-between p-5 text-white fixed bg-[#000026]'>
                 <Navbar3 />
 
+                  <div className='sm:px-[270px]  bg-transparent w-[89%] flex justify-center items-center z-20 fixed top-[10%]'>
+                    {notifications && (
+                        <div className={`p-10 
+                      bg-[#000026]  glass  text-center  w-full  animate-slide-in`} >
+                            <AiOutlineClose onClick={() => setNotifications(false)} />
+                            <h1>Notifications</h1>
+
+                            <div className='flex justify-center mt-10 text-[#5f5f5f]'>
+                                <IoMdNotificationsOff className='text-[90px]' />
+
+                            </div>
+                            <div className='text-[#5f5f5f] mt-5'>
+                                <h1>No Notifications</h1>
+                            </div>
+
+                        </div>
+                    )}
+                </div>
+
+
                 <div className='text-[#5f5f5f] sm:hidden'>
-                    <IoMdNotificationsOutline className='text-[#5f5f5f] text-[27px] sm:hidden'/>
+                    <IoMdNotificationsOutline className='text-[#5f5f5f] text-[27px] sm:hidden hover:animate-bounce' onClick={() => setNotifications(true)}/>
                 </div>
             </div>
 
