@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Button, Navbar3, BottomIcon } from '../components'
 import { Link, useNavigate } from 'react-router-dom'
-import { BsToggleOn, BsToggleOff } from 'react-icons/bs'
+import { BsToggle2On, BsToggle2Off } from 'react-icons/bs'
 
 const Setting = () => {
     const [form, setForm] = useState()
@@ -71,8 +71,8 @@ const Setting = () => {
                 </div>
 
                 <div>
-                    {toggle && (<BsToggleOn className='text-[#0d6efd] text-[30px]' onClick={() => setToggle(false)} />)}
-                    {!toggle && (<BsToggleOff className='text-[#5f5f5f] text-[30px]' onClick={() => setToggle(true)} />)}
+                    {toggle && (<BsToggle2On className='text-[#0d6efd] text-[30px]' onClick={() => setToggle(false)} />)}
+                    {!toggle && (<BsToggle2Off className='text-[#5f5f5f] text-[30px]' onClick={() => setToggle(true)} />)}
                 </div>
 
             </div>
