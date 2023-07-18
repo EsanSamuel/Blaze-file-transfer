@@ -94,7 +94,7 @@ const Files = ({ handleAddCard }) => {
             </div>
 
             <Cardlist
-                card={card.filter((cardx) => cardx.text.includes(search))}
+                card={card.filter((cardx) => cardx.text.toLowerCase().includes(search.toLowerCase()))}
                 handleAddCard={addCards}
                 handleDeleteCard={deleteCard}
             />
